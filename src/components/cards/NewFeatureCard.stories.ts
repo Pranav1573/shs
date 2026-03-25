@@ -17,6 +17,6 @@ type Story = StoryObj<typeof meta>
 export const Default: Story = {
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement)
-    await waitFor(() => expect(canvas.getByText(/We have many new features planned/i)).toBeVisible())
+    await waitFor(() => expect(canvas.getByText(/looking for new maintainers/i)).toBeVisible())
   },
 }
